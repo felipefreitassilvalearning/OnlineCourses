@@ -1,0 +1,25 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*
+*
+*
+Estilo para o conteúdo do nosso site
+*
+*
+*/
+
+html, body{
+	height: 100%;
+}
+
+
+.text[type=text]{
+	background-color: #00ff00;
+}
+
+input[type=submit]{
+	background-color: #0000ff;
+}

@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*
+*
+*
+Estilo para o conteúdo do nosso site
+*
+*
+*/
+
+html, body{
+	height: 100%;
+}
+
+.clear{
+	clear: both;
+}
+
+.pai{
+	width: 1280px;
+	padding: 20px 0;
+	margin: 20px auto;
+	background-color: blue;
+}
+
+.child{
+	box-sizing: border-box;
+	width: 640px;
+	height: 300px;
+	background-color: red;
+	float: left;
+	text-align: center;
+	font-size: 40px;
+	padding: 50px 0;
+	color: white;
+	border: 1px solid black;
+}

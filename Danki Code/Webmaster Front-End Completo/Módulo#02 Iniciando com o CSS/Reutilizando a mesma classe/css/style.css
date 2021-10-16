@@ -1,0 +1,30 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*
+*
+*
+Estilo para o conteúdo do nosso site
+*
+*
+*/
+
+html, body{
+	height: 100%;
+}
+
+.tipo1{
+	color: rgb(100,100,100);
+}
+
+
+a.link_{
+	font-size: 30px;
+}
+
+
+.tipo2{
+	font-size: 40px;
+}

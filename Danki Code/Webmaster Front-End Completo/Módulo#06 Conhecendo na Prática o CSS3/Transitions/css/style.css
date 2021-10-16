@@ -1,0 +1,50 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+html, body{
+	height: 100%;
+}
+
+
+div.box{
+	width: 300px;
+	height: 300px;
+	background-color: green;
+	/*
+	-webkit-transition-property: width height;
+	transition-property: width;
+	-webkit-transition-property: 3s;
+	transition-duration: 3s;
+	transition-delay: 1s;
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
+	*/
+	-webkit-transition: 1s width, 3s height;
+	transition: 1s width, 3s;
+	-webkit-transition-delay: 2s;
+	transition-delay: 2s;
+}
+
+div.box:hover{
+	width: 600px;
+	height: 400px;
+}
+
+/*
+
+form input{
+	width: 200px;
+	height: 20px;
+	transition: 1s;
+	border: 1px solid #ccc;
+}
+
+form input:focus{
+	width: 300px;
+}
+
+*/

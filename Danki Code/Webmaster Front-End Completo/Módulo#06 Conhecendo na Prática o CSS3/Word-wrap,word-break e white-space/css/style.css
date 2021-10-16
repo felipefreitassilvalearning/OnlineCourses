@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+html, body{
+	height: 100%;
+}
+
+
+.box{
+	width: 30px;
+	background-color: rgb(220, 220, 220);
+	position: relative;
+}
+
+.box p{
+	word-break: keep-all; /*word-break e word-wrap fazem quase a mesma coisa*/
+	display: inline;
+	border-bottom: 2px solid green;
+	color: #444;
+	font-size: 13px;
+}
+
+p{
+	width: 100px;
+	background-color: gray;
+	/*white-space: nowrap; não quebra a linha nunca, jamais*/
+	/*white-space: pre;respeita qualquer espaço ou enter que eu der no html*/
+	/*white-space: pre-line;respeita enter, mas não espaço*/
+}

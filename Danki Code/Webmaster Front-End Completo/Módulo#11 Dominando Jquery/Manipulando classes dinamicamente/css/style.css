@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body{
+    height: 100%;
+}
+
+
+.box{
+    width: 100%;
+    padding: 40px 3%;
+    background-color: rgb(210, 210, 210);
+    color: black;
+    text-align: center;
+    margin: 2px 0;
+    transition: 1s;
+}
+
+.box2{
+    background-color: black;
+    /*display: none;*/
+    color: white;
+}
+
+.minhaclasse{
+    color: red;
+}

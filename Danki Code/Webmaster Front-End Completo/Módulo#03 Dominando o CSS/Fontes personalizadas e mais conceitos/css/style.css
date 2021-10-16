@@ -1,0 +1,40 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+@font-face{
+	font-family: "Minha Fonte";
+	src:url('../fonts/OpenSans-Light.ttf');
+}
+
+html, body{
+	height: 100%;
+	font-family: "Open Sans";
+}
+
+
+form * {
+	font-family: "Open Sans";
+}
+
+/*
+
+Importar do meu diretório 
+
+
+*/
+/*
+
+Usando "!important" o nível de especificação não interessa.
+
+.box p{
+	font-family: "Open Sans";
+}
+
+.text{
+	font-family: tahoma !important;
+}
+
+*/
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominando o JQuery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <p>Olá, mundo!</p>
+    <span>Olá, mundo!</span>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/aplicarCor.jquery.js"></script>
+    <script>
+        $(function(){
+            $('p, span').aplicarCor({
+                color:'green',
+                backgroundColor: 'white'
+            });
+        })
+    </script>
+
+</body>
+</html>

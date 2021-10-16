@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body{
+    height: 100%;
+}
+
+
+.box{
+    width: 500px;
+    background-color: #ccc;
+    padding: 20px;
+    margin: 30px;
+}

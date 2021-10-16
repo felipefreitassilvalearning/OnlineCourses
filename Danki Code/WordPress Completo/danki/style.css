@@ -1,0 +1,461 @@
+﻿/*
+Theme Name: Danki
+Theme URI: https://cursos.dankicode.com
+Author: Guilherme Grillo
+Author URI: https://dankicode.com
+Description: Tema para o curso de wp da danki code
+Version: 1.0
+*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto";
+}
+/*
+	Classes Auxiliares
+*/
+.center{
+	max-width: 1100px;
+	margin: 0 auto;
+	padding:0 2%;
+}
+
+.clear{clear: both;}
+
+.w50{float: left;width: 50%;padding:0 15px;}
+
+/**/
+
+.menu-mobile{display: none;}
+
+.menu-mobile{
+	float: right;
+}
+
+.menu-mobile i{
+	font-size: 33px;
+	color: white;
+	cursor: pointer;
+}
+
+.menu-mobile ul{
+	left: 0;
+	top: 77px;
+	display: none;
+	width: 100%;
+	position: absolute;
+	list-style-type: none;
+}
+
+.menu-mobile li{
+	padding: 8px 0;
+	text-align: center;
+	display: block;
+	width: 100%;
+	background: white;
+	border-bottom: 1px solid #00f9f7;
+}
+
+.menu-mobile a{
+	display: block;
+	text-decoration: none;
+	color: #202020;
+}
+
+section.topo{
+	background-image: linear-gradient(114deg, #250e8a, #00f9f7);
+	padding-top: 40px;
+	padding-bottom: 80px;
+}
+
+.logo{
+	float: left;
+}
+
+.menu-desktop{
+	float: right;
+}
+
+.menu-desktop li{
+	display: inline-block;
+	margin:0 15px;
+}
+
+.menu-desktop a{
+	text-decoration: none;
+	color: white;
+	opacity: 0.6;
+}
+
+.menu-desktop a:hover{
+	opacity: 1;
+}
+
+.time-descricao{
+	margin-top:50px;
+	color: white;
+}
+
+.time-descricao h2{
+	font-size: 45px;
+}
+
+.time-descricao p{
+	font-size: 14px;
+	margin-top: 10px;
+	max-width: 240px;
+}
+
+.time-descricao a{
+	display: inline-block;
+	margin-top: 14px;
+	padding:10px 8px;
+	text-decoration: none;
+	color: #1b49a5;
+	font-weight: bold;
+	border-radius: 8px;
+	background: #ffca00;
+	box-shadow: 0 20px 30px 0 rgba(37, 15, 138, 0.2);
+}
+
+.time-imagem img{max-width: 100%;}
+
+.circle{
+	position: absolute;
+	left: 50%;
+	margin-top:-20px;
+	transform: translateX(-50%);
+   width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 10px 25px 0 rgba(37, 15, 139, 0.1);
+}
+
+.circle i{
+	position: relative;
+	top: 5px;
+	font-size: 30px;
+	color:#1c4aa6;
+}
+
+section.clientes-slider{
+	padding:60px 0;
+}
+
+section.clientes-slider img{padding:0 20px;}
+
+/****SLICK SLIDER****/
+
+.slick-dotted ul{
+	list-style-type: none;
+	text-align: center;
+	position: relative;
+	margin-top:10px;
+}
+
+.slick-dotted li{
+	display: inline-block;
+	margin: 0 7px;
+}
+
+.slick-dotted button:focus{
+	outline: 0;
+}
+
+.slick-dotted li button{
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	color: #d8d8d8;
+	border-width: 0;
+	background: #d8d8d8;
+	opacity: 1;
+	cursor: pointer;
+}
+
+li.slick-active button{
+	background: #0c3f8a;
+	color: #0c3f8a;
+}
+
+.slick-slide:focus { outline: none; }
+
+/**END SLICK**/
+
+
+section.diferenciais{
+	padding: 30px 0;
+}
+
+section.diferenciais h2{
+	color:#202020;
+	font-size: 30px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.icons-diferenciais{
+	display: flex;
+	flex-wrap: wrap;
+	margin-top:80px;
+}
+
+
+.box-single-diferenciais{
+	text-align: center;
+	width: 33.3%;
+	padding:0 10px;
+	margin-bottom: 30px;
+}
+
+.box-single-diferenciais img{
+	max-width: 100%;
+}
+
+
+.box-single-diferenciais h3{
+	font-size: 17px;
+	margin:10px 0;
+	color: #202020;
+}
+
+.box-single-diferenciais p{
+	font-size: 14px;
+	color: #202020;
+}
+
+section.sobre-time{
+	padding: 40px 0;
+	background-color: #f4f9fd;
+
+}
+
+.img-time img{max-width: 100%;}
+
+.time-descricao-2{
+	padding: 0 20px;
+
+}
+
+.time-descricao-2 h2{
+	color: #202020;
+	line-height: 35px;
+	font-size: 24px;
+	margin-bottom: 30px;
+}
+
+.time-descricao-2 p{
+	color: #272727;
+	padding-right: 30px;
+	font-size: 15px;
+}
+
+section.depoimentos{
+	padding: 100px 0;
+	background-color: #23188f;
+}
+
+section.depoimentos h2{
+	text-align: center;
+	color: white;
+	font-weight: normal;
+	font-size: 30px;
+}
+
+.depoimentos-box{
+	margin:10px auto;
+	max-width: 800px;
+	overflow: hidden;
+	width: 100%;
+	display: block;
+}
+.depoimento-single{width: 100%;display: inline-block;}
+.depoimento-single p{text-align: center;margin-bottom: 15px;color: white;}
+.depoimento-single img{
+	width: 70px;
+	height: 70px;
+	display: block;
+	margin: 10px auto;
+	border-radius: 50%;
+}
+
+section.metodologia{
+	position: absolute;
+	z-index: 10;
+	top:-40px;
+	left: 50%;
+	width: 100%;
+	transform:translateX(-50%);
+	max-width: 940px;
+	margin: 0 auto;
+	padding:40px 0;
+	background: white;
+	border-top: 3px solid #ffca00;
+	box-shadow: 10px 20px 60px 0 rgba(0, 0, 0, 0.06);
+	text-align: center;
+}
+
+section.metodologia h2{
+	color: #232931;
+	font-size: 24px;
+	font-weight: normal;
+}
+section.metodologia p{
+	font-size: 14px;
+	  color: #b4b4b4;
+	  margin:15px 0;
+}
+
+section.metodologia a{
+	text-decoration:none;
+	color: white;
+	padding:8px 15px;
+	background-color: #23188f;
+	border-radius: 5px;
+	font-size: 14px;
+	display: inline-block;
+	margin-top: 8px;
+}
+
+footer{
+	position: relative;
+	padding-top:300px;
+	padding-bottom: 100px;
+	background: white;
+}
+
+footer > .center{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col-footer{
+	width: 20%;
+}
+
+.col-footer h2{color: #232931;font-size: 13px;font-weight: normal;margin-bottom: 15px;text-transform: uppercase;}
+.col-footer a{color: #b4b4b4;font-size: 13px;display: block;margin-top: 16px;text-decoration: none;}
+
+
+/*Página sobre*/
+section.sobre-equipe{
+	padding: 40px 0;
+}
+
+section.sobre-equipe img{max-width: 100%;}
+
+.equipe-sobre-texto h2{
+	font-size:45px;
+	color: #202020;
+	padding:0 20px;
+}
+.equipe-sobre-texto p{
+	font-size: 16px;
+	line-height: 32px;
+	color:#202020;
+	padding:0 20px;
+}
+
+section.sobre-imagens{
+	padding: 100px 0;
+	background-color:#f4f9fd;
+}
+
+.sobre-imagens > .center{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sobre-imagens img{max-width: 100%;}
+
+.sobre-imagens .img-sobre{padding:0 30px;width: 25%;}
+
+section.contato{
+	padding:30px 0;
+}
+
+.contato-info h2{
+	color: #202020;
+	font-size: 43px;
+	font-weight: normal;
+}
+
+.contato-info p{
+	color: #202020;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+
+.mapa-container{
+	width: 100%;
+	padding-top: 70%;
+	position: relative;
+}
+
+div#mapa{
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: gray;
+	width: 100%;
+	height: 100%;
+}
+.contato-form{padding:0 30px;margin-top:40px;}
+.contato-form input[type=text]{
+	width: 100%;
+	height: 48px;
+	margin-bottom: 15px;
+	border: solid 1px #e3e3e3;
+	padding-left: 8px;
+	font-size: 16px;
+	box-shadow: 0 2px 4px 0 rgba(92, 99, 110, 0.1);
+}
+.contato-form select{
+	width: 100%;
+	height: 48px;
+	margin-bottom: 15px;
+	border: solid 1px #e3e3e3;
+	padding-left: 8px;
+	font-size: 16px;
+	box-shadow: 0 2px 4px 0 rgba(92, 99, 110, 0.1);
+}
+.contato-form textarea{
+	width: 100%;
+	height:120px;
+	margin-bottom: 15px;
+	border: solid 1px #e3e3e3;
+	padding: 8px;
+	font-size: 16px;
+	box-shadow: 0 2px 4px 0 rgba(92, 99, 110, 0.1);
+	resize:none;
+}
+.contato-form input[type=submit]{
+	width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  box-shadow: 0 20px 30px 0 rgba(203, 203, 203, 0.2);
+  background-color: #212a97;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 17px;
+}
+
+section.erro-404{
+	padding: 30px 0;
+}
+
+@media screen and (max-width: 768px){
+	.col-footer{margin-bottom: 30px;width: 100% !important;text-align: center !important;}
+	.box-single-diferenciais{width: 100%;}
+	.w50{width: 100%;}
+	.img-time{margin-top:30px;}
+	.menu-desktop{display: none;}
+	.menu-mobile{display: block;}
+.sobre-imagens .img-sobre{padding:0 30px;width: 100%;text-align: center;margin-bottom: 20px;}
+	section.sobre-equipe img{margin-top: 20px;}
+}

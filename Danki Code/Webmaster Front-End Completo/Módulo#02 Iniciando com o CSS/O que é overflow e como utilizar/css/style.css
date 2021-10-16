@@ -1,0 +1,36 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*
+*
+*
+Estilo para o conteúdo do nosso site
+*
+*
+*/
+
+html, body{
+	height: 100%;
+}
+
+.box, .box2{
+	width: 300px;
+	margin: 0 auto;
+	background-color: gray;
+	/*
+	overflow-x: hidden;
+	overflow-y: hidden;
+	*/
+}
+
+.box p, .box2 p{
+	width: 100%;
+}
+
+.box2{
+	background-color: #ff0000;
+	margin-top: 20px;
+	display: block;
+}

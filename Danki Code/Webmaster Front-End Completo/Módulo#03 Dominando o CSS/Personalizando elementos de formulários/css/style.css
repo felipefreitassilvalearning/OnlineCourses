@@ -1,0 +1,77 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+html, body{
+	height: 100%;
+}
+
+
+/*
+
+input[type=file]{
+	display: none;
+}
+
+label{
+	display: block;
+	margin: 20px auto;
+	cursor: pointer;
+	font-size: 17px;
+	width: 220px;
+	height: 40px;
+	background-color: #ccc;
+	color: white;
+	text-align: center;
+	line-height: 40px;
+}
+
+*/
+
+form{
+	text-align: center;
+	background-color: #ccc;
+	padding: 30px 0;
+}
+
+/*
+
+form select{
+	width: 220px;
+	height: 30px;
+	border: 0;
+	padding-left: 10px;
+	background-image: url('../img/sprite.png');
+	background-size: 10px 20px;
+	background-repeat: no-repeat;
+	background-position: 96% 8px;
+	appearance: none;
+}
+
+*/
+/*
+
+Para o Internet Explorer:
+
+select: :-ms-expand{
+display: none;
+}
+
+*/
+
+input[type=checkbox]{
+	display: none;
+}
+
+label{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	background-color: #0f0;
+}
+
+input[type=checkbox]:checked + label{
+	background-color: #f00;
+}

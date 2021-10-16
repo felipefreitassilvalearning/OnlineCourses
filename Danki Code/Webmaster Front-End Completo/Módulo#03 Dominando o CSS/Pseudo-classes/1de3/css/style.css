@@ -1,0 +1,75 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+html, body{
+	height: 100%;
+}
+
+
+.teste,.teste1,.teste2{
+	width: 300px;
+	margin-top: 30px;
+	margin-left: 30px;
+	display: inline-block;
+	height: 30px;
+	/*
+	background-color: rgb(196,196,196);
+	*/
+}
+
+.teste1{
+	background-color: rgb(98,98,98);
+}
+
+.teste2{
+	background-color: rgb(50,50,50);
+}
+
+/*
+.teste:hover{
+	height: 900px;
+	background-color: #0000ff;
+}
+
+.teste:hover ,.teste1,.teste2{
+	vertical-align: top;
+}
+*/
+
+/* enquanto pressionar com o mouse
+
+.teste:active{
+	background-color: rgb(0,0,0);
+}
+
+*/
+
+/* onde estiver focando
+
+textaream,input
+
+.teste:focus{
+	background-color: rgb(249,0,1);
+}
+
+.textarea1{
+	display: block;
+	width: 600px;
+	height: 400px;
+}
+
+*/
+
+/*
+.link1:link{
+	color: orange;
+}
+
+.link1:visited{
+	color: purple;
+} 
+*/
+

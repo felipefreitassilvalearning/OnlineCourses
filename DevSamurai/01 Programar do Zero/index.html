@@ -1,0 +1,163 @@
+<html>
+  <body>
+    <canvas id="background" width="600" height="500"></canvas>
+
+    <script>
+      //run the first codes
+      window.onload = function () {
+        start(); //run the commands and variables
+
+        setInterval(mainFunction, 1000 / 50); //run the game
+      };
+
+      function start() {
+        //out of the loop
+        folhaDesenho = document.getElementById("background");
+        areaDesenho = folhaDesenho.getContext("2d");
+
+        courtWidth = 600;
+        courtHeight = 500;
+        netThickness = 5;
+
+        ballDiameter = 10;
+
+        racketThickness = 11;
+        racketHeight = 100;
+
+        racketCurve = 0.03;
+        player2Speed = 5;
+
+        player1Position = player2Position = 40;
+        ballXPosition = ballYPosition = 10;
+        ballXSpeed = ballYSpeed = 20;
+        player1Score = player2Score = 0;
+
+        folhaDesenho.addEventListener("mousemove", function (e) {
+          player1Position = e.clientY - racketHeight / 2;
+        });
+      }
+
+      function mainFunction() {
+        desenhar();
+        calcular();
+      }
+
+      function desenhar() {
+        //court
+        areaDesenho.fillStyle = "#286047";
+        areaDesenho.fillRect(0, 0, courtWidth, courtHeight);
+        //net
+        areaDesenho.fillStyle = "#ffffff";
+        areaDesenho.fillRect(
+          courtWidth / 2 - netThickness / 2,
+          0,
+          netThickness,
+          courtHeight
+        );
+
+        //ball
+        areaDesenho.fillRect(
+          ballXPosition - ballDiameter / 2,
+          ballYPosition - ballDiameter / 2,
+          ballDiameter,
+          ballDiameter
+        );
+
+        //racket
+        areaDesenho.fillRect(0, player1Position, racketThickness, racketHeight);
+        areaDesenho.fillRect(
+          courtWidth - racketThickness,
+          player2Position,
+          racketThickness,
+          racketHeight
+        );
+
+        //Scores on the screen
+        areaDesenho.fillText(
+          "Human score: " + player1Score,
+          courtWidth / 2 - courtWidth / 3,
+          100
+        );
+        areaDesenho.fillText(
+          "PC score: " + player2Score,
+          courtWidth - courtWidth / 3,
+          100
+        );
+      }
+
+      //loop
+      function calcular() {
+        //game code in the time interval
+        desenhar();
+
+        ballXPosition = ballXPosition + ballXSpeed;
+        ballYPosition = ballYPosition + ballYSpeed;
+
+        //upper side check
+        if (ballYPosition < 0 && ballYSpeed < 0) {
+          ballYSpeed = -ballYSpeed;
+        }
+
+        //bottom side check
+        if (ballYPosition > courtHeight && ballYSpeed > 0) {
+          ballYSpeed = -ballYSpeed;
+        }
+
+        //player 2 scores
+        if (ballXPosition < 0) {
+          if (
+            ballYPosition > player1Position &&
+            ballYPosition < player1Position + racketHeight
+          ) {
+            //hit the ball
+            ballXSpeed = -ballXSpeed;
+
+            var yDifference =
+              ballYPosition - (player1Position + racketHeight / 2);
+            ballYSpeed = yDifference * racketCurve;
+          } else {
+            //player 2 scores
+            player2Score = player2Score + 1;
+            //ball goes back to the centre
+            continuar();
+          }
+        }
+
+        //player 1 scores
+        if (ballXPosition > courtWidth) {
+          if (
+            ballYPosition > player2Position &&
+            ballYPosition < player2Position + racketHeight
+          ) {
+            //hit the ball
+            ballXSpeed = -ballXSpeed;
+
+            var yDifference =
+              ballXPosition - (player2Position + racketHeight / 2);
+            ballYSpeed = yDifference * racketCurve;
+          } else {
+            //player 1 scores
+            player1Score = player1Score + 1;
+            //ball goes back to the center
+            continuar();
+          }
+        }
+
+        //player 2 movement
+        if (player2Position + racketHeight / 2 < ballYPosition) {
+          player2Position = player2Position + player2Speed;
+        } else {
+          player2Position = player2Position - player2Speed;
+        }
+      }
+
+      function continuar() {
+        //ball goes back to the center
+        ballXPosition = courtWidth / 2;
+        ballYPosition = courtHeight / 2;
+        ballXSpeed = -ballXSpeed;
+        ballYSpeed = 3;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+html, body{
+	height: 100%;
+}
+
+
+ul{
+	list-style-position: inside;
+}
+
+/*
+
+De acordo com o tipo de elemento
+
+ul li:nth-of-type(2){
+	color: rgb(255,0,0);
+}
+
+*/
+
+/* 
+
+De acordo com os filhos
+
+ul span:nth-child(6){
+	color: #ff0000;
+}
+
+*/
+

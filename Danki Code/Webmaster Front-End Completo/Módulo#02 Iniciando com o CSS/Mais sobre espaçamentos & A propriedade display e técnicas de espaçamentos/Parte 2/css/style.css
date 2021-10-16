@@ -1,0 +1,32 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*
+*
+*
+Estilo para o conteúdo do nosso site
+*
+*
+*/
+
+html, body{
+	height: 100%;
+}
+
+/*
+span{
+	width: 30px;
+	height: 300px;
+	background: red;
+}
+*/
+
+p{
+	display: inline-block;
+	width: 30px;
+	margin-right: -4px;
+	height: 300px;
+	background: red;
+}

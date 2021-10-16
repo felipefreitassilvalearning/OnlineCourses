@@ -1,0 +1,31 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+html, body{
+	height: 100%;
+}
+
+
+main{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+aside{
+	width: 300px;
+	/*order: 2;*/
+	background-color: #ccc;
+	padding: 90px 20px;
+}
+
+article{
+	width: 800px;
+	/*order: 1;*/
+	padding: 30px;
+	background-color: gray;
+}

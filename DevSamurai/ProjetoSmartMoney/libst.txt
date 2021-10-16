@@ -1,0 +1,9 @@
+yarn add @react-native-async-storage/async-storage
+yarn add @react-native-community/datetimepicker
+yarn add @react-native-community/masked-view
+yarn add lodash
+yarn add moment
+yarn add react-native-linear-gradient
+react-native link react-native-linear-gradient
+yarn add react-native-gesture-handler react-native-masked-text react-native-modal-datetime-picker react-native-reanimated react-native-rename react-native-safe-area-context react-native-screens react-native-screens react-native-svg react-native-svg-charts react-native-vector-icons react-navigationreact-number-format react-number-format reactotron-react-native realm
+npm i uuid@3.3.3

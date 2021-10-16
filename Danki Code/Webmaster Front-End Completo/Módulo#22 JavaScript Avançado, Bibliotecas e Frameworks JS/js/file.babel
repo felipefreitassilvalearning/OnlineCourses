@@ -1,0 +1,122 @@
+var container = document.getElementById('main');
+
+class Box extends React.Component{
+
+    render(){
+        var n = 10;
+        return <h1>Olá, mundo {n}!</h1>
+    }
+
+}
+
+class Formulario1 extends React.Component{
+
+    render(){
+        return (<form><input type="text" /><input type="submit" /></form>)
+    }
+
+}
+
+class Nome1 extends React.Component{
+
+    render(){
+        function printNome(){
+            return 'Felipe';
+        }
+        return <h1>{printNome()}</h1>;
+    }
+
+}
+
+class Nome2 extends React.Component{
+    
+    printNome(){
+        return <h1>Felipe</h1>;
+    }
+
+    render(){
+        return this.printNome()
+    }
+
+}
+
+class Nome3 extends React.Component{
+
+    getNome(){
+        return 'João';
+    }
+    
+    printNome(){
+        return <p>{this.getNome()}</p>;
+    }
+
+    render(){
+        return <h2>{this.printNome()}</h2>
+    }
+
+}
+
+class Nome4 extends React.Component{
+
+    render(){
+        return <h2>{this.props.nome}</h2>
+    }
+
+}
+
+class Nome5 extends React.Component{
+
+    render(){
+        return <h2>{this.props.nome} {this.props.sobrenome}</h2>
+    }
+
+}
+
+class Formulario2 extends React.Component{
+
+    render(){
+        return (<div><input type="text" onClick={this.handleClick} /><input type="submit" /></div>)
+    }
+
+    handleClick(){
+        $('body').css('background-color','#ccc')
+    }
+
+}
+
+class Formulario3 extends React.Component{
+
+    renderMyApp(){
+        return(<div><input type="text" /><input type="submit" onClick={this.handleClick} /></div>);
+    }
+
+    render(){
+        return this.renderMyApp();
+    }
+
+    handleClick(){
+        $('body').css('background-color','#ccc')
+    }
+
+}
+
+class Formulario4 extends React.Component{
+
+    renderMyApp(){
+        return(<div><input type="text" /><input type="submit" onClick={this.handleClick} /></div>);
+    }
+
+    render(){
+        return this.renderMyApp();
+    }
+
+    handleClick(){
+        $('body').append('<div class="estilo"></div>');
+        alert("clicado");
+    }
+
+}
+
+ReactDOM.render(<div><Formulario4 /></div>,container);
+
+//ReactDOM.render(<div><Formulario2 /><Nome5 nome="Felipe" sobrenome="Silva" /><Nome5 nome="João" sobrenome="Freitas" /><Nome5 nome="Guilherme" sobrenome="Souza" /></div>,container);

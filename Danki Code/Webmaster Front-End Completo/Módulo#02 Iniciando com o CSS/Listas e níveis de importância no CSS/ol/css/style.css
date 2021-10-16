@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*
+*
+*
+Estilo para o conteúdo do nosso site
+*
+*
+*/
+
+html, body{
+	height: 100%;
+}
+
+
+.um{
+	width: 500px;
+	height: 800px;
+	background: red;
+}
+
+.um > .dois{
+	width: 300px;
+	height: 300px;
+	background: green;
+}
+
+.um > .tres{
+	width: 100px;
+	height: 100px;
+	background: blue;
+}
+
+.um .quatro{
+	width: 100px;
+	height: 100px;
+	background: gray;
+}
+
+/* .um > .tres > .quatro{
+	width: 100px;
+	height: 100px;
+	background: gray;
+} */

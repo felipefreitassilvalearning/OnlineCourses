@@ -1,0 +1,73 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+html, body{
+	height: 100%;
+}
+
+
+/* Parte 1 - Aprendendo a utilizar o border-radius + responsivo */
+.box{
+	width: 30%;
+	padding-top: 30%;
+	margin: 50px auto;
+	position: relative;
+	/*
+	border-top-right-radius: 250px;
+	border-top-left-radius: 150px;
+	border-bottom-right-radius: 50px;
+	border-bottom-left-radius: 0;
+	*/
+	/*
+	border-radius: 30%;
+	*/
+}
+
+.teste{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: black;
+}
+
+/* Parte 2 - Aprendendo a utilizar o transform */
+.transform{
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 40%;
+	max-width: 500px;
+	height: 500px;
+	border: 3px solid #ccc;
+	border-radius: 8px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	animation-name: animacao;
+	animation-duration: 3s;
+}
+
+/*.transform:hover{
+	transform: translate(-50%,-50%) rotate(45deg) scaleX(2) scaleY(1.5);
+	transform: translate(-50%,-50%) rotateY(270deg)/*Y = gira "pro lado" X = gira "pra cima"*//*;
+}*/
+
+@keyframes animacao{
+	0%{
+		transform:translate(-50%,-50%) rotateY(0deg)
+	}
+
+	50%{
+		transform:translate(-50%,-50%) rotateY(180deg)
+	}
+
+	100%{
+		transform:translate(-50%,-50%) rotateY(0deg)
+	}
+}

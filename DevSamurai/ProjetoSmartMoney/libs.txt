@@ -1,0 +1,8 @@
+yarn add realm react-native-get-random-values uuid
+yarn add react-native-linear-gradient
+react-native link react-native-linear-gradient
+yarn add react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+yarn add react-native-vector-icons
+react-native link react-native-vector-icons
+yarn add react-navigation react-native-svg react-native-masked-text
+yarn add @react-native-picker/picker

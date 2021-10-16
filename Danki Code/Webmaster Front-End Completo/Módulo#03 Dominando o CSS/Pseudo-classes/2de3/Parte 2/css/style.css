@@ -1,0 +1,96 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+html, body{
+	height: 100%;
+}
+
+
+ul{
+	list-style-position: inside;
+}
+
+.box{
+	width: 100%;
+}
+
+.box > div{
+	box-sizing: border-box;
+	float: left;
+	width: 33.3%;
+	height: 400px;
+	background-color: #f00;
+	border: 1px solid black;
+}
+
+
+/*
+
+adicionar depois ou antes de algum conteúdo
+
+p.p:after{
+	content: ' Felipe';
+	background-color: #f00;
+}
+
+.p:before{
+	content: 'Felipe';
+}
+
+*/
+/*
+
+Se estiver sem conteúdo
+
+p:empty{
+	width: 200px;
+	height: 200px;
+	background-color: orange;
+}
+
+/* 
+
+Negação! Aplique o estilo para todas as divs que NÃO tenha a classe ONE
+
+.box div:not(.one){
+	background-color: gold;
+}
+
+*/
+/*
+
+.box div:last-child p{
+	color: rgba(255,255,255,1);
+}
+
+*/
+/*
+
+Pegamos o último elemento do mesmo tipo
+
+.box div:last-of-type,.box p:last-of-type{
+	background-color: #0f0;
+}
+
+*/
+/*
+
+De acordo com o tipo de elemento
+
+ul li:nth-of-type(2){
+	color: rgb(255,0,0);
+}
+
+*/
+/* 
+
+De acordo com os filhos
+
+ul span:nth-child(6){
+	color: #ff0000;
+}
+
+*/

@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body{
+    height: 100%;
+}
+
+
+#container{
+    border: 1px solid #ccc;
+    width: 500px;
+    height: 300px;
+}

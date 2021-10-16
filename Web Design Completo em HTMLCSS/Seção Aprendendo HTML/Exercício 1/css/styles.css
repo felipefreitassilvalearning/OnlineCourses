@@ -1,0 +1,85 @@
+
+body {
+	text-align: left;
+	font-family: arial;
+}
+
+
+ul {
+	list-style: none;
+	padding: 0px;
+
+}
+
+li {
+	line-height: 24px;
+}
+
+a {
+	color: #484848;
+}
+
+figcaption {
+	font-size: 12px;
+}
+
+
+
+.navigation {
+	background-color: #ff7212;
+	color: white;
+	margin-left: 100px;
+}
+
+
+
+
+
+
+
+
+.titulo-artigo h1 {
+	margin-left: 120px;
+	margin-right: 120px;
+	font-size: 48px;
+	color: black;
+	letter-spacing: -3px;
+
+}
+
+
+
+
+
+
+.content {
+	width: 600px;
+	margin-top: 50px;
+	text-align: left;
+	margin-bottom: 50px;
+	margin-left: 120px;
+}
+
+.content img {
+	width: 600px;
+	margin-top: 30px;
+}
+
+.content h3 {
+	font-size: 14px;
+}
+
+.content p {
+	font-size: 18px;
+	line-height: 30px;
+	color: #484848;
+}
+
+.video-da-vinci h4 {
+	margin-top: 30px;
+}
+
+#link-vermelho {
+	color: red;
+}
+

@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+
+h2{
+    font-size: 17px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+[type=text]{
+    width: 900px;
+}
+
+[type=button]{
+    background-color: red;
+}

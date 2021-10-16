@@ -1,0 +1,23 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	height: 100%;
+}
+
+
+.parent{
+	width: 50%;
+	height: 400px;
+	background-color: orange;
+}
+
+.box{
+	width: 50%;
+	margin-left: 50%;
+	padding-top: 25%;
+	display: inline-block;
+	background-color: grey;
+}

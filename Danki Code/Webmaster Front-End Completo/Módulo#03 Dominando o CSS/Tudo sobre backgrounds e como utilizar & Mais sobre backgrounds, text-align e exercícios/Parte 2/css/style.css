@@ -1,0 +1,55 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+html, body{
+	height: 100%;
+}
+
+
+.bg{
+	/*
+	width: 100%;
+	margin: 0 auto;
+	height: 30vh; /*viewing height (altura da janela)*/
+	/*background-image: url('../img/sunset.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #f00;
+	background-repeat: no-repeat;
+	*/
+	/*
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	*/
+}
+
+.box{
+	width: 100%;
+	margin: 80px auto;
+	text-align: center;
+	background-color: #f0f0f0;
+}
+
+.item{
+	width: 100%;
+	display: inline-block;
+}
+
+.item img{
+	width: 16;
+}
+
+.item p{
+	background-color: rgb(200,0,255); /*purple*/
+	display: inline-block;
+	text-align: right;
+}
+
+
+.last{
+	margin-right: 0;
+}

@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+
+h2{
+    font-size: 17px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.teste{
+    color: red;
+}
+
+p.paragrafo{
+    font-size: 30px;
+}
