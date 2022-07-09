@@ -1,4 +1,4 @@
-public class Main {
+public class Aula03 {
     public static void main(String[] args) {
         Caneta03 c1 = new Caneta03();
         c1.modelo = "BIC cristal";

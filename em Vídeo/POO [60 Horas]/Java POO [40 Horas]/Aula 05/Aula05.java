@@ -1,4 +1,4 @@
-public class Main {
+public class Aula05 {
     public static void main(String[] args) {
         ContaBanco p1 = new ContaBanco();
         p1.setNumConta(1111);
