@@ -1,4 +1,4 @@
-public class Caneta {
+public class Caneta03 {
     public String modelo;
     public String cor;
     private float ponta;
