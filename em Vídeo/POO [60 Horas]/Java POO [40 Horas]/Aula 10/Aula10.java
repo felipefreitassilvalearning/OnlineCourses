@@ -2,7 +2,7 @@ public class Aula10 {
     public static void main(String[] args) {
         Pessoa10 p1 = new Pessoa10();
         Aluno10 p2 = new Aluno10();
-        Professor p3 = new Professor();
+        Professor10 p3 = new Professor10();
         Funcionario p4 = new Funcionario();
 
         p1.setNome("Pedro");
