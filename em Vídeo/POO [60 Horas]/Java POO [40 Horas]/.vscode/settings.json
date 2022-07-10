@@ -1,11 +1,14 @@
 {
-    "java.project.sourcePaths": [
-        "Aula 02",
-        "Aula 03",
-        "Aula 04",
-        "Aula 05",
-        "Aula 06",
-        "Aula 07",
-        "Aula 08"
-    ]
+  "java.project.sourcePaths": [
+    "Aula 10",
+    "Aula 09",
+    "Aula 08",
+    "Aula 07",
+    "Aula 06",
+    "Aula 05",
+    "Aula 04",
+    "Aula 03",
+    "Aula 02",
+    "Aula 11"
+  ]
 }
