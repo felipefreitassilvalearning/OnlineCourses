@@ -1,5 +1,5 @@
 <?php
-    class Pessoa {
+    class Pessoa09 {
         private $nome;
         private $idade;
         private $sexo;
