@@ -4,9 +4,9 @@ public class Livro implements Publicacao {
     private int totPaginas;
     private int pagAtual;
     private boolean aberto;
-    private Pessoa leitor;
+    private Pessoa09 leitor;
 
-    public Livro(String titulo, String autor, int totPaginas, Pessoa leitor) {
+    public Livro(String titulo, String autor, int totPaginas, Pessoa09 leitor) {
         this.titulo = titulo;
         this.autor = autor;
         this.totPaginas = totPaginas;
@@ -55,11 +55,11 @@ public class Livro implements Publicacao {
         this.aberto = aberto;
     }
 
-    public Pessoa getLeitor() {
+    public Pessoa09 getLeitor() {
         return leitor;
     }
 
-    public void setLeitor(Pessoa leitor) {
+    public void setLeitor(Pessoa09 leitor) {
         this.leitor = leitor;
     }
 

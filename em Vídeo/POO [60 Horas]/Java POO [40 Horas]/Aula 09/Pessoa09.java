@@ -1,9 +1,9 @@
-public class Pessoa {
+public class Pessoa09 {
     private String nome;
     private int idade;
     private String sexo;
 
-    public Pessoa(String nome, int idade, String sexo) {
+    public Pessoa09(String nome, int idade, String sexo) {
         this.nome = nome;
         this.idade = idade;
         this.sexo = sexo;
@@ -33,7 +33,6 @@ public class Pessoa {
         this.sexo = sexo;
     }
 
-    @Override
     public String toString() {
         return (""
                 + "\tNome: " + this.getNome()
