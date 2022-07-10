@@ -1,7 +1,7 @@
 public class Aula10 {
     public static void main(String[] args) {
-        Pessoa p1 = new Pessoa();
-        Aluno p2 = new Aluno();
+        Pessoa10 p1 = new Pessoa10();
+        Aluno10 p2 = new Aluno10();
         Professor p3 = new Professor();
         Funcionario p4 = new Funcionario();
 
