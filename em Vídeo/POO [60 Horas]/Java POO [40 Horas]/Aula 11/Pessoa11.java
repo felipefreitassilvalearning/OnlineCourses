@@ -1,4 +1,4 @@
-public abstract class Pessoa {
+public abstract class Pessoa11 {
     protected String nome;
     protected int idade;
     protected String sexo;
