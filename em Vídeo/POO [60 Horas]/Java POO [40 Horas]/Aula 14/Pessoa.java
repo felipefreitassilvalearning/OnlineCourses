@@ -44,9 +44,9 @@ public abstract class Pessoa {
 
     public String toString() {
         return (""
-                + "Nome: " + nome
-                + "\nIdade: " + idade
-                + "\nSexo: " + sexo);
+                + "\tNome: " + nome
+                + "\n\tIdade: " + idade
+                + "\n\tSexo: " + sexo);
     }
 
 }

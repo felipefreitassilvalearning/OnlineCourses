@@ -26,7 +26,7 @@ public class Video implements AcoesVideo {
     }
 
     public void setAvaliacao(int avaliacao) {
-        this.avaliacao = avaliacao;
+        this.avaliacao = (this.getAvaliacao() + avaliacao) / this.getViews();
     }
 
     public int getViews() {
@@ -71,11 +71,11 @@ public class Video implements AcoesVideo {
     @Override
     public String toString() {
         return (""
-                + "Título: " + titulo
-                + "\nAvaliação: " + avaliacao
-                + "\nViews: " + views
-                + "\nCurtidas: " + curtidas
-                + "\nReproduzindo: " + reproduzindo);
+                + "\tTítulo: " + titulo
+                + "\n\tAvaliação: " + avaliacao
+                + "\n\tViews: " + views
+                + "\n\tCurtidas: " + curtidas
+                + "\n\tReproduzindo: " + reproduzindo);
     }
 
 }
