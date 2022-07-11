@@ -2,6 +2,13 @@ public abstract class Pessoa {
     protected String nome;
     protected int idade;
     protected String sexo;
+    protected float experiencia;
+
+    protected Pessoa(String nome, int idade, String sexo) {
+        this.nome = nome;
+        this.idade = idade;
+        this.sexo = sexo;
+    }
 
     public String getNome() {
         return nome;
@@ -27,15 +34,19 @@ public abstract class Pessoa {
         this.sexo = sexo;
     }
 
-    public String toString() {
-        return (""
-                + "Nome: " + this.getNome()
-                + "\nIdade: " + this.getIdade()
-                + "\nSexo: " + this.getSexo());
+    public float getExperiencia() {
+        return experiencia;
     }
 
-    public final void fazerAniv() {
-        this.setIdade(this.getIdade() + 1);
+    public void setExperiencia(float experiencia) {
+        this.experiencia = experiencia;
+    }
+
+    public String toString() {
+        return (""
+                + "\tNome: " + nome
+                + "\n\tIdade: " + idade
+                + "\n\tSexo: " + sexo);
     }
 
 }

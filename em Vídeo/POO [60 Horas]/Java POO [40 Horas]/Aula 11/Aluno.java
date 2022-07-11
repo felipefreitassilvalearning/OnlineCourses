@@ -1,4 +1,4 @@
-public class Aluno extends Pessoa {
+public class Aluno extends Pessoa11 {
     private int matricula;
     private String curso;
 
