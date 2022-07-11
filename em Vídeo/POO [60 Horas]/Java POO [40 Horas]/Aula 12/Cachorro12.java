@@ -1,4 +1,4 @@
-public class Cachorro extends Mamifero {
+public class Cachorro12 extends Mamifero {
     public void enterrarOsso() {
         System.out.println("Enterrando Osso");
     }

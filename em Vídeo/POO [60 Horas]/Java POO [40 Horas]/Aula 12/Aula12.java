@@ -6,7 +6,7 @@ class Aula12 {
         Peixe peixe = new Peixe();
         Ave ave = new Ave();
         Canguru canguru = new Canguru();
-        Cachorro cachorro = new Cachorro();
+        Cachorro12 cachorro = new Cachorro12();
         Cobra cobra = new Cobra();
         Tartaruga tartaruga = new Tartaruga();
         GoldFish goldFish = new GoldFish();
