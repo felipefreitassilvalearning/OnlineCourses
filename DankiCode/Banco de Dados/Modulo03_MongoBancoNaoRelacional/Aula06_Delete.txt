@@ -1,0 +1,5 @@
+db.Posts.find()
+db.Posts.deleteOne({ comentarios: {$ne:null} })
+db.Posts.find({})
+db.Posts.deleteOne({ _id: ObjectId("") })
+db.Posts.find()

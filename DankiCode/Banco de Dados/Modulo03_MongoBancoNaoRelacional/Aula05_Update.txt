@@ -1,0 +1,9 @@
+db.Posts.insertOne({ nome: 'Guilherme', idade: 18 })
+db.Posts.find({})
+// UPDATE Posts
+// SET nome 'Rodrigo'
+// WHERE nome = 'Guilherme'
+db.Posts.updateOne({ nome: 'Guilherme' }, {$set: ${ nome: 'Rodrigo' }})
+db.Posts.find({})
+db.Posts.find({ name: 'Rodrigo' })
+db.Posts.find({ comentarios: {$ne:null} })

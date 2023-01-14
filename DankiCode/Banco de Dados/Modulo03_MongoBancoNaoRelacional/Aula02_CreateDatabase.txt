@@ -1,0 +1,3 @@
+use curso_banco_de_dados;
+// Se não existe, cria e muda para
+show collections;

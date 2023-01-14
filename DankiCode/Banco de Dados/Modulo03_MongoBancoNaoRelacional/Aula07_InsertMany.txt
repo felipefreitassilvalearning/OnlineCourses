@@ -1,0 +1,3 @@
+db.Posts.find()
+db.Posts.insertMany([ { nome: 'Guilherme', idade: 19 }, { nome: 'Lucas', idade: 20 }, { nome: 'Lucio', vetor: ['sim', 'pode' ]} ])
+db.Posts.find()
