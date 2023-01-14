@@ -1,0 +1,7 @@
+// INSERT INTO posts Object
+db.Posts.insertOne({ nome: 'Felipe', conteudo: 'Minha noticia de exemplo' })
+// SELECT * FROM posts
+db.Posts.find()
+// Não há estrututra fixa
+db.Posts.insertOne({ comentarios: [2,3,4,6] })
+db.Posts.find()
