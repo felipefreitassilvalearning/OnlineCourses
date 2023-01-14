@@ -1,13 +1,3 @@
-/em Vídeo/Java Básico [[]40 Horas]/Aula06/TiposPrimitivos/target/
-/em Vídeo/Java Básico [[]40 Horas]/Aula06/TesteTipos/target/
-/em Vídeo/Java Básico [[]40 Horas]/Aula06/SomaSwing/target/
-*.xml
-*.form
-/em Vídeo/Java Básico [[]40 Horas]/Aula06/Exercicios/calculadoraIdade/target/
-/em Vídeo/Java Básico [[]40 Horas]/Aula07/OperadoresSwing/target/
-/em Vídeo/Java Básico [[]40 Horas]/Aula07/Exercicios/SuperCalculadora/target/
-em Vídeo/Java Básico \[40 Horas\]/Swings/src/main/java/com/cursoemvideo/javabasico/ffs/swings/Swings.java
-em Vídeo/Java Básico \[40 Horas\]/.vscode/settings.json
-*.lnk
-*.json
-em Vídeo/POO \[60 Horas\]/.vscode/settings.json
+**/*.class
+**/.vscode/settings.json
+**/*.lnk
