@@ -1,0 +1,449 @@
+/* Reset styles */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+	/* Calculate rems on base 10 */
+	font-size: 62.5%;
+}
+
+a {
+	text-decoration: none;
+}
+
+input,
+button {
+	outline: none;
+	font-family: inherit;
+	border: 0;
+}
+
+:root {
+	--background: #f7f5f5;
+	--darkGray: #535b6c;
+	--lightGray: #aab3c2;
+	--purple: #525dad;
+	--orange: #f75915;
+
+	--header1: 3.6rem;
+	--header2: 3.4rem;
+	--header3: 2.5rem;
+	--header4: 1rem;
+}
+
+/* Page specific styles */
+
+body {
+	width: min(100%, 1280px);
+	padding: 2% 4%;
+	margin: 0 auto;
+	background-color: var(--background);
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+section:is(.briefing, .servicos-prestados, .nossos-trabalhos, .contato)
+	.title
+	h4 {
+	color: var(--darkGray);
+	font-size: var(--header4);
+	font-weight: bold;
+	text-align: center;
+}
+
+section:is(.briefing, .servicos-prestados, .nossos-trabalhos, .contato)
+	.title
+	h2 {
+	color: var(--purple);
+	font-size: var(--header2);
+	font-weight: normal;
+	text-align: center;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+
+	padding: 2rem 0.2rem;
+}
+
+.header-logo a logo {
+	font-size: 2rem;
+	color: var(--darkGray);
+}
+
+.header-menu {
+	flex-grow: 1;
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+}
+
+.header-menu ul {
+	list-style-type: none;
+	text-align: right;
+}
+
+.header-menu a {
+	color: var(--lightGray);
+	font-size: var(--header4);
+	font-weight: bold;
+}
+
+.header-menu a:hover,
+.header-menu a:active {
+	color: var(--darkGray);
+}
+
+.header-social {
+	display: none;
+}
+
+main {
+	gap: 7rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.briefing {
+	gap: 5rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.briefing .main {
+	gap: 1rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.briefing :is(h1, strong) {
+	color: var(--purple);
+	font-weight: normal;
+	font-size: var(--header1);
+	line-height: 3.6rem;
+}
+
+.briefing h1 strong {
+	color: var(--orange);
+}
+
+.briefing p {
+	font-size: var(--header4);
+	color: var(--lightGray);
+	word-spacing: 0.4rem;
+	font-weight: bold;
+	line-height: 1.6rem;
+}
+
+.briefing .briefing-button {
+	width: 80%;
+
+	background-color: var(--orange);
+	padding: 1.5rem 3rem;
+	border-radius: 0.5rem;
+
+	color: var(--background);
+	font-size: var(--header4);
+	font-weight: bold;
+
+	word-spacing: 0.5rem;
+	letter-spacing: 0.2rem;
+
+	text-align: center;
+}
+
+.briefing .briefing-button:hover,
+.briefing .briefing-button:active {
+	background-color: var(--purple);
+	transition: 0.5s;
+}
+
+.servicos-prestados {
+	gap: 3rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.servicos-prestados .main-content {
+	gap: 3rem;
+	display: flex;
+}
+
+.servicos-prestados .main-content .img {
+	display: none;
+}
+
+.servicos-prestados .main-content .text {
+	gap: 3rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.servicos-prestados .main-content .text img {
+	width: 55px;
+	height: 55px;
+}
+
+.servicos-prestados .main-content .text h3 {
+	color: var(--darkGray);
+	font-size: var(--header3);
+	font-weight: normal;
+}
+
+.servicos-prestados .main-content .text p {
+	color: var(--lightGray);
+	font-size: 1rem;
+	line-height: 1.6rem;
+}
+
+.feedback {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+
+.feedback blockquote {
+	gap: 2rem;
+	display: flex;
+	flex-direction: column;
+
+	padding-right: 30%;
+	overflow-x: hidden;
+}
+
+.feedback blockquote p {
+	color: var(--darkGray);
+	font-weight: bold;
+	font-size: 1.4rem;
+	line-height: 2.6rem;
+}
+
+.feedback blockquote cite {
+	color: var(--lightGray);
+	font-size: 1.2rem;
+}
+
+.feedback img {
+	display: none;
+
+	width: 350px;
+	position: absolute;
+	top: -1%;
+	right: -50%;
+
+	pointer-events: none;
+}
+
+.nossos-trabalhos {
+	gap: 3rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.nossos-trabalhos .nossos-trabalhos-grid {
+	gap: 1rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 2fr 1fr 3fr;
+}
+
+.nossos-trabalhos .nossos-trabalhos-grid img {
+	width: 100%;
+	height: 100%;
+}
+
+.nossos-trabalhos .nossos-trabalhos-grid img:nth-of-type(5) {
+	grid-column: span 2;
+}
+
+.nossos-trabalhos .nossos-trabalhos-grid img:nth-of-type(n + 6) {
+	display: none;
+}
+
+.contato {
+	gap: 3rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.contato form fieldset {
+	gap: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.contato form fieldset label {
+	gap: 1rem;
+	display: flex;
+	flex-direction: column;
+
+	color: var(--lightGray);
+	font-size: 1.2rem;
+}
+
+.contato form fieldset input,
+.contato form fieldset textarea {
+	width: 100%;
+	min-height: 70px;
+	padding: 0.5rem 0.75rem;
+	border-radius: 0.125rem;
+	border: 1px solid var(--lightGray);
+}
+
+.contato form button {
+	width: 100%;
+	background-color: var(--orange);
+	padding: 1.5rem 3rem;
+	border-radius: 0.5rem;
+
+	color: var(--background);
+	font-size: var(--header4);
+	font-weight: bold;
+
+	word-spacing: 0.5rem;
+	letter-spacing: 0.2rem;
+}
+
+.contato form button:hover,
+.contato form button:active {
+	background-color: var(--purple);
+	transition: 0.5s;
+}
+
+footer {
+	gap: 3rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+
+	padding: 2rem 0.2rem;
+}
+
+.footer-contato-email a {
+	color: var(--purple);
+	font-size: 1.4rem;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.footer-contato-email a:hover,
+.footer-contato-email a:active {
+	color: var(--orange);
+}
+
+.footer-social {
+	gap: 2rem;
+	display: flex;
+}
+
+.footer-social a {
+	color: var(--lightGray);
+	font-size: 3rem;
+}
+
+.footer-logo a logo {
+	font-size: 2rem;
+	color: var(--lightGray);
+}
+
+@media (min-width: 768px) {
+	body {
+		padding: 1% 2%;
+	}
+
+	.header-menu {
+		flex-direction: row;
+	}
+
+	.header-menu ul {
+		width: 100%;
+		flex: 1;
+
+		gap: 2rem;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.header-social {
+		gap: 2rem;
+		display: flex;
+	}
+
+	.header-social a {
+		font-size: 3rem;
+	}
+
+	.briefing {
+		flex-direction: row;
+	}
+
+	.briefing .briefing-button {
+		width: 40%;
+	}
+
+	.servicos-prestados .main-content .img {
+		display: block;
+		width: 100%;
+	}
+
+	.feedback img {
+		display: none;
+	}
+
+	.nossos-trabalhos .nossos-trabalhos-grid {
+		max-width: 1100px;
+		margin-inline: auto;
+		grid-template-columns: repeat(7, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+	}
+
+	.nossos-trabalhos .nossos-trabalhos-grid img:nth-of-type(1) {
+		grid-column: span 2;
+		grid-row: span 2;
+	}
+
+	.nossos-trabalhos .nossos-trabalhos-grid img:nth-of-type(2) {
+		grid-column: span 3;
+		grid-row: span 3;
+	}
+
+	.nossos-trabalhos .nossos-trabalhos-grid img:nth-of-type(3),
+	.nossos-trabalhos .nossos-trabalhos-grid img:nth-of-type(4) {
+		grid-row: span 2;
+	}
+
+	.nossos-trabalhos .nossos-trabalhos-grid img:nth-of-type(n + 6) {
+		display: block;
+	}
+
+	.contato form {
+		width: clamp(600px, 50%, 1100px);
+		margin-inline: auto;
+	}
+
+	.contato form fieldset {
+		width: 100%;
+		gap: 2rem;
+		flex-direction: row;
+	}
+
+	.contato form fieldset label {
+		width: 100%;
+	}
+
+	.contato form fieldset input {
+		width: 100%;
+	}
+
+	.contato form fieldset textarea {
+		min-height: 200px;
+		resize: none;
+	}
+}
