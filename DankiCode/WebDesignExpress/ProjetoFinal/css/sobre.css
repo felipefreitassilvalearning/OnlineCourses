@@ -1,0 +1,228 @@
+/* Welcome Section */
+
+.welcome {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(../imgs/bg1.jpg);
+
+	position: relative;
+
+	gap: 2rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+}
+
+.welcome::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.welcome .title-text-wrapper {
+	gap: 1.2rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.welcome .title-text-wrapper h1 {
+	position: relative;
+	text-align: left;
+	color: var(--aqua);
+}
+
+.welcome .title-text-wrapper .text-wrapper {
+	gap: 0.8rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.welcome .title-text-wrapper .text-wrapper p {
+	position: relative;
+	color: white;
+}
+
+/* Presentation Section */
+
+.presentation {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.presentation .text-wrapper {
+	gap: 0.8rem;
+	display: flex;
+	flex-direction: column;
+
+	padding-top: 1rem;
+}
+
+/* Parallax Section */
+
+.parallax {
+	gap: 1rem;
+	display: flex;
+	flex-direction: column;
+
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-image: url(../imgs/bg1.jpg);
+}
+
+.parallax h2 {
+	width: max-content;
+	font-size: 1rem;
+	align-self: center;
+	padding: 0.5rem 0.9rem;
+	border: 0.8px solid var(--aqua);
+}
+
+.parallax p {
+	color: white;
+}
+
+/* Team Section */
+
+.team {
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+
+	gap: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.team .team-members {
+	gap: 1.7rem;
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+}
+
+.team .team-members .team-member-card {
+	gap: 0.8rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.team .team-members .team-member-card .img-wrapper {
+	max-width: 250px;
+	max-height: 250px;
+	border-radius: 50%;
+}
+
+.team .team-members .team-member-card img {
+	border-radius: inherit;
+}
+
+.team .team-members .team-member-card h4 {
+	font-size: 1.2rem;
+	font-weight: normal;
+}
+
+/* Miscellaneous Section */
+
+.miscellaneous {
+	padding-bottom: 2rem;
+	background-color: var(--lightGray);
+}
+
+.daily-picture {
+	gap: 1rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.daily-picture figure {
+	position: relative;
+}
+
+.daily-picture figure figcaption {
+	position: absolute;
+	color: white;
+	font-size: 1.4rem;
+	right: 10px;
+	bottom: 10px;
+}
+
+.daily-picture,
+.history {
+	padding-top: 2rem;
+}
+
+.history {
+	gap: 1rem;
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+	/* Team Section */
+
+	.team .team-members {
+		gap: 2rem;
+		row-gap: 3.4rem;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: max-content;
+	}
+
+	.team .team-members > div:last-of-type {
+		grid-column: span 2;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	/* Presentation Section */
+
+	.presentation {
+		gap: 2rem;
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+	}
+
+	.presentation img {
+		grid-column: span 3;
+		grid-row: span 2;
+	}
+
+	.presentation p:nth-of-type(1),
+	.presentation p:nth-of-type(2) {
+		grid-column: span 2;
+	}
+
+	.presentation p:nth-of-type(n + 3) {
+		grid-column: span 5;
+	}
+
+	/* Team Section */
+
+	.team .team-members {
+		gap: 2.5rem;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.team .team-members > div:last-of-type {
+		grid-column: span 1;
+	}
+
+	/* Miscellaneous Section */
+
+	.miscellaneous {
+		gap: 3rem;
+		display: flex;
+	}
+}
