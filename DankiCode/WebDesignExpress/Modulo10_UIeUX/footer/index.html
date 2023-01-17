@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Footers | UI/UX</title>
+		<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: "Open Sans";
+		}
+
+		section{
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+		}
+
+		.container{max-width: 1100px;margin: 0 auto;padding: 0 2%;display: flex;flex-wrap: wrap;}
+
+		footer.one{
+			padding: 20px 0;
+			width: 100%;
+			background: #90caf9;
+		}
+
+		.footer-single{
+			width: 33.3%;
+			padding: 0 15px;
+			color: white;
+		}
+
+		.footer-single h2{
+			font-weight: normal;
+			font-size: 20px;
+		}
+
+		.footer-single p{
+			font-size: 15px;
+			font-weight: 300;
+		}
+
+		.social-media{margin-top: 10px;}
+		.footer-single a{
+			color: white;
+			text-decoration: none;
+			padding: 0 10px;
+		}
+
+		footer.two{
+			background: #64b5f6;
+			padding: 8px 0;
+			text-align: center;
+			color: white;
+		}
+
+		@media screen and (max-width: 768px){
+			.footer-single{
+				text-align: center;
+				margin-bottom: 20px;
+				width: 100%;
+			}
+		}
+
+	</style>
+</head>
+<body>
+
+	<section>
+	<footer class="one">
+		<div class="container">
+			<div class="footer-single">
+				<h2>Sobre:</h2>
+				<p>Lorem ipsum occaecat ea tempor proident occaecat eiusmod. Sunt do ut adipisicing sunt ea magna ullamco id.</p>
+			</div><!--footer-single-->
+			<div class="footer-single">
+				<h2>Telefone:</h2>
+				<p><i class="fa fa-phone" aria-hidden="true"></i> (48)9999-99999</p>
+				<p><i class="fa fa-phone" aria-hidden="true"></i> (48)9999-99999</p>
+			</div><!--footer-single-->
+			<div class="footer-single">
+				<h2>Conecte-se conosco:</h2>
+				<div class="social-media">
+					<a href="faceook.com"><i class="fa fa-facebook"></i></a>
+					<a href="faceook.com"><i class="fa fa-instagram"></i></a>
+				</div><!--social-media-->
+			</div><!--footer-single-->
+		</div><!--container-->
+	</footer>
+	<footer class="two">
+		Todos os direitos reservados!
+	</footer>
+	</section>
+</body>
+</html>

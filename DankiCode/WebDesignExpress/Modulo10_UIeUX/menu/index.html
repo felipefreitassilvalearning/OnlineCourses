@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu | UI/UX</title>
+	<meta charset="utf-8" />
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<!--meta tag viewport pendente-->
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo-desktop"><a href="/index.html">Logomarca</a></div><!--desktop-->
+			<nav class="desktop">
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Sobre</a></li>
+					<li><a href="">Contato</a></li>
+				</ul>
+			</nav><!--desktop-->
+			<nav class="mobile">
+				<div class="logo-mobile"><a href="/index.html">Logomarca</a></div><!--desktop-->
+				<h3><i class="fa fa-bars"></i></h3>
+				<ul>
+					<li><a href="">Home</a></li>
+					<li><a href="">Sobre</a></li>
+					<li><a href="">Contato</a></li>
+				</ul>
+			</nav><!--mobile-->
+			<div class="clear"></div>
+		</div><!--container-->
+	</header>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script>
+		$(function(){
+			$('nav.mobile h3').click(function(){
+				$('nav.mobile ul').slideToggle();
+			})
+		})
+	</script>
+</body>
+</html>

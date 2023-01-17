@@ -1,0 +1,97 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container{
+	max-width: 960px;
+	padding: 0 2%;
+	margin:0 auto;
+}
+
+.clear{clear: both;}
+
+header{
+	background: #333;
+	padding: 8px 0;
+}
+
+.logo-desktop{
+	float: left;
+}
+
+.logo-desktop a{
+	color: white;
+	font-size: 18px;
+}
+
+nav.mobile{
+	display: none;
+}
+
+nav.desktop{
+	float: right;
+}
+
+nav.desktop li{
+	display: inline-block;
+	padding: 0 15px;
+}
+
+nav.desktop a{
+	color: white;
+	text-decoration: none;
+}
+
+nav.desktop a:hover{
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 768px){
+	.logo-desktop,
+	nav.desktop{
+		display: none;
+	}
+
+	.logo-mobile a{
+		text-decoration: none;
+		color: white;
+		font-size: 18px;
+	}
+
+	nav.mobile{
+		position: relative;
+		text-align: center;
+		display: block;
+		width: 100%;
+	}
+
+	nav.mobile h3{
+		cursor: pointer;
+		position: absolute;
+		left: 0;
+		top: 0;
+		color: white;
+	}
+
+	nav.mobile ul{
+		display: none;
+		background: #333;
+		position: absolute;
+		left: -3%;
+		top: 29px;
+		width: 105%;
+		text-align: center;
+	}
+
+	nav.mobile li{
+		padding: 8px 0;
+		border-top:1px solid white;
+	}
+
+	nav.mobile a{
+		color: white;
+		text-decoration: none;
+	}
+}
