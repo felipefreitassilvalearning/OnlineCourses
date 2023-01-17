@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+h2 {
+	font-size: 17px;
+	font-style: italic;
+	font-weight: normal;
+}
+
+div {
+	/* background-color: cyan; */
+	/* background-color: #295579; */
+	background-color: rgb(200 200 200);
+}
+
+h2 {
+	color: rgb(69, 116, 209);
+}

@@ -1,0 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+:root {
+	--corPadrao: #423781;
+	--widthPadrao: 500px;
+}
+
+div {
+	margin: 0 auto;
+	max-width: var(--widthPadrao);
+	background-color: var(--corPadrao);
+}

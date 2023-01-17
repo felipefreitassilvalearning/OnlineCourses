@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	flex-direction: row-reverse;
+}
+
+.d1,
+.d2,
+.d3 {
+	width: 50%;
+	height: 300px;
+}
+
+.d1 {
+	width: 100%;
+	height: auto;
+	background-color: red;
+}
+.d2 {
+	height: 800px;
+	background-color: green;
+}
+.d3 {
+	background-color: blue;
+}

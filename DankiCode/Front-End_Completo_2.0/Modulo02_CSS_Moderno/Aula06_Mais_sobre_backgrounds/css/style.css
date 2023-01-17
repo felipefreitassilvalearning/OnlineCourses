@@ -1,0 +1,17 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+div {
+	width: 100%;
+	height: 400px;
+	background-image: url('../../../Modulo01_HTML_Moderno/assets/images/cachorro.png');
+	background-repeat: no-repeat;
+	background-position: top center;
+	/* background-size: 100% 100%; */
+	background-size: cover;
+	background-color: cyan;
+}

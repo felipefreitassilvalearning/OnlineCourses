@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+}
+
+.d1,
+.d2,
+.d3 {
+	width: 300px;
+	height: 300px;
+}
+
+.d1 {
+	width: 50%;
+	height: auto;
+	display: inline-block;
+	background-color: red;
+}
+.d2 {
+	display: inline-block;
+	background-color: green;
+}
+.d3 {
+	background-color: blue;
+}
