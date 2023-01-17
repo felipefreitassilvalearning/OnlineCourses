@@ -1,0 +1,592 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+	--lightGray: rgb(225, 225, 225);
+	--gray: #ccc;
+	--darkGray: #646464;
+	--lightAqua: #44d4c5;
+	--aqua: #52aaa7;
+	--darkAqua: #237a70;
+	--brown: #8a6b62;
+	--lightBrown: #acac9d;
+	--lightBlack: rgb(30, 30, 30);
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+h2 {
+	color: var(--aqua);
+	font-size: 1.6rem;
+}
+
+h2 span {
+	border-top: 3px solid var(--darkAqua);
+}
+
+header,
+section {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+/* Mobile Header */
+
+.header {
+	gap: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header .logo a {
+	font-size: 2rem;
+}
+
+.header .menu {
+	flex-grow: 1;
+}
+
+.header:has(.menu nav.mobile-menu.open ul) {
+	position: relative;
+}
+
+.header .menu nav.mobile-menu ul {
+	display: none;
+}
+
+.header .menu nav.mobile-menu.open ul {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	position: absolute;
+	top: 50px;
+	left: 0;
+}
+
+.header .menu nav.mobile-menu.open ul li {
+	width: 100%;
+	display: grid;
+	place-items: center;
+}
+
+.header .menu nav.mobile-menu.open ul li:nth-of-type(2n) {
+	width: 100%;
+	min-height: 30px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.header .menu nav.mobile-menu.open ul li.active {
+	background-color: var(--darkGray);
+}
+
+.header .menu nav.mobile-menu.open ul li a {
+	width: 100%;
+	text-align: center;
+	padding: 1% 2%;
+	background-color: white;
+}
+
+.header .menu nav.mobile-menu.open ul li a:hover {
+	background-color: var(--gray);
+}
+
+.header .menu nav.desktop-menu {
+	display: none;
+}
+
+/* Welcome Section */
+
+.welcome {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url(../imgs/bg1.jpg);
+
+	position: relative;
+
+	gap: 2rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+}
+
+.welcome::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+}
+
+.welcome .title-text-wrapper {
+	gap: 1.2rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.welcome .title-text-wrapper h1 {
+	position: relative;
+	text-align: center;
+	color: var(--aqua);
+}
+
+.welcome .title-text-wrapper .text-wrapper {
+	gap: 0.8rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.welcome .title-text-wrapper .text-wrapper p {
+	position: relative;
+	color: white;
+}
+
+.welcome a {
+	position: relative;
+	width: min(40%, 300px);
+	min-height: 40px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 2% 4%;
+	background-color: var(--aqua);
+	border-radius: 0.25rem;
+}
+
+.welcome a:hover {
+	background-color: var(--lightAqua);
+}
+
+/* User Experience Section */
+
+.user-experience {
+	gap: 2rem;
+	display: flex;
+	flex-direction: column;
+
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+}
+
+.user-experience .experiences-grid {
+	gap: 1.3rem;
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+}
+
+.user-experience .experiences-grid > div {
+	gap: 1rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.user-experience .experiences-grid > div i {
+	color: var(--brown);
+	font-size: 3rem;
+}
+
+.user-experience .experiences-grid > div p {
+	color: var(--gray);
+}
+
+/* About Team Section */
+
+.about-team {
+	gap: 2rem;
+	display: flex;
+	flex-direction: column-reverse;
+
+	background-color: var(--lightGray);
+
+	padding-bottom: 2rem;
+}
+
+.about-team .about,
+.about-team .team {
+	display: flex;
+	flex-direction: column;
+	padding-top: 3rem;
+}
+
+.about-team .about {
+	gap: 0.8rem;
+}
+
+.about-team .about .text-wrapper {
+	gap: 0.6rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.about-team .about .text-wrapper p {
+	font-size: 0.9rem;
+}
+
+.about-team .sobre-saiba-mais {
+	display: none;
+}
+
+.about-team .team {
+	gap: 1.8rem;
+}
+
+.about-team .team .team-members-wrapper {
+	gap: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.about-team .team .team-members-wrapper .team-member-wrapper {
+	gap: 1.2rem;
+	display: flex;
+	align-items: center;
+}
+
+.about-team
+	.team
+	.team-members-wrapper
+	.team-member-wrapper
+	.team-member-image {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	background-color: var(--darkGray);
+}
+
+.about-team
+	.team
+	.team-members-wrapper
+	.team-member-wrapper
+	.team-member-image
+	img {
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
+}
+
+.about-team .team .team-members-wrapper .team-member-wrapper .team-member-info {
+	width: 80%;
+	gap: 0.3rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.about-team
+	.team
+	.team-members-wrapper
+	.team-member-wrapper
+	.team-member-info
+	span {
+	font-weight: bold;
+}
+
+.about-team
+	.team
+	.team-members-wrapper
+	.team-member-wrapper
+	.team-member-info
+	p {
+	color: var(--darkGray);
+}
+
+.about-team a {
+	position: relative;
+	width: min(40%, 250px);
+	min-height: 40px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 2% 4%;
+	background-color: var(--aqua);
+	border-radius: 0.25rem;
+}
+
+.about-team a:hover {
+	background-color: var(--lightAqua);
+}
+
+/* Subscri form be Section */
+
+.subscribe {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	background-color: var(--aqua);
+
+	gap: 0.4rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.subscribe .subscribe-call {
+	color: white;
+	font-size: 1.4rem;
+	text-align: center;
+}
+
+.subscribe .subscribe-form form {
+	display: flex;
+	justify-content: center;
+}
+
+.subscribe .subscribe-form form input {
+	border: 0;
+	outline: 0;
+	padding: 1% 2%;
+	min-height: 40px;
+	background-color: white;
+	width: 100%;
+}
+
+.subscribe .subscribe-form form input[type='submit'] {
+	color: white;
+	font-size: 1rem;
+	max-width: 100px;
+	background-color: var(--darkAqua);
+}
+
+/* Images Section */
+
+.images {
+	gap: 3rem;
+	display: grid;
+	grid-template-rows: repeat(3, 1fr);
+
+	padding-top: 4rem;
+	padding-bottom: 2rem;
+}
+
+.images .card {
+	gap: 1rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.images .card img {
+	width: 100%;
+	height: 100%;
+}
+
+.images .card p {
+	border-bottom: 1px solid var(--darkGray);
+	padding-bottom: 0.5rem;
+}
+
+/* Footer */
+
+.footer {
+	color: white;
+	background-color: var(--aqua);
+}
+
+.footer .utility,
+.footer .copywrights {
+	text-align: center;
+	padding: 1rem 3rem;
+}
+
+.footer .utility {
+	gap: 2rem;
+	display: flex;
+	flex-direction: column;
+
+	padding-top: 2rem;
+}
+
+.footer .utility h5 {
+	font-size: 1.2rem;
+	font-weight: normal;
+}
+
+.footer .utility a {
+	color: white;
+	display: block;
+	font-size: 1rem;
+	text-decoration: underline;
+}
+
+.footer .utility .social {
+	gap: 1rem;
+	display: flex;
+	padding: 1rem 0;
+	justify-content: center;
+}
+
+.footer .utility .social a i {
+	font-size: 1.4rem;
+}
+
+.footer .copywrights {
+	font-size: 0.9rem;
+	background-color: var(--darkAqua);
+}
+
+@media screen and (min-width: 768px) {
+	header,
+	section {
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	/* Mobile Header */
+
+	.header .menu nav.mobile-menu ul {
+		display: none;
+	}
+
+	.header .menu nav.mobile-menu.open ul {
+		display: none;
+	}
+
+	.header .menu nav.desktop-menu {
+		display: block;
+	}
+
+	.header .menu nav.desktop-menu ul {
+		list-style-type: none;
+
+		gap: 1.6rem;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+	.header .menu nav.desktop-menu ul li:hover,
+	.header .menu nav.desktop-menu ul li.active {
+		font-weight: bold;
+		text-decoration: underline;
+	}
+
+	/* User Experience Section */
+
+	.user-experience .experiences-grid {
+		row-gap: 3rem;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: max-content;
+	}
+
+	.user-experience .experiences-grid > div:last-of-type {
+		grid-column: span 2;
+	}
+
+	/* About Team Section */
+
+	.about-team .team a {
+		align-self: center;
+	}
+
+	/* Images Section */
+
+	.images {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: max-content;
+	}
+
+	.images .card:last-of-type {
+		grid-column: span 2;
+	}
+
+	/* Footer */
+
+	.footer .utility {
+		row-gap: 3rem;
+		padding-top: 3rem;
+
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.footer .utility > div:last-of-type {
+		grid-column: span 2;
+	}
+}
+
+@media screen and (min-width: 1366px) {
+	header,
+	section {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
+
+	/* User Experience Section */
+
+	.user-experience .experiences-grid {
+		gap: 4rem;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.user-experience .experiences-grid > div:last-of-type {
+		grid-column: span 1;
+	}
+
+	/* About Team Section */
+
+	.about-team {
+		flex-direction: row-reverse;
+	}
+
+	.about-team .sobre-saiba-mais {
+		display: block;
+		align-self: center;
+		text-align: center;
+	}
+
+	.about-team .team-saiba-mais {
+		display: none;
+	}
+
+	/* Subscribe Section */
+
+	.subscribe {
+		gap: 1rem;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.subscribe .subscribe-form {
+		flex-grow: 0.6;
+	}
+
+	/* Images Section */
+
+	.images {
+		grid-template-columns: repeat(3, 1fr);
+		padding-bottom: 3rem;
+	}
+
+	.images .card:last-of-type {
+		grid-column: span 1;
+	}
+
+	/* Footer */
+
+	.footer .utility {
+		padding-top: 2.4rem;
+		padding-bottom: 1.6rem;
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.footer .utility > div:last-of-type {
+		grid-column: span 1;
+	}
+}
