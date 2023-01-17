@@ -1,0 +1,25 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+}
+
+.box{
+	width: 100px;
+	height: 9000px;
+	background: green;
+	/*
+	overflow-y:auto;
+	overflow-x:auto;
+	*/
+	/*overflow:auto;*/
+}
+
+.filho{
+	width: 100px;
+	height: 200px;
+	background: red;
+}

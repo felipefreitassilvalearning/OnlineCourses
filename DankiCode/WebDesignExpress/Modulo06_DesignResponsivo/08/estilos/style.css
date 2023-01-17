@@ -1,0 +1,20 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+}
+.el1{
+	display:inline-block;
+	width: 100px;
+	height: 100px;
+	background: red;
+	vertical-align: middle;
+}
+
+.p1{
+	display: inline-block;
+	vertical-align: middle;
+}

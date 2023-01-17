@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html,body{
+	height: 100%;
+}
+
+.box{
+	width: 500px;
+	height: 200px;
+	background: orange;
+}
+
+
+*:not(.box){
+	width: 100px;
+	height: 200px;
+	background: red;
+}
+
+/*
+.child{
+	background: red;
+}
+
+*/
+/*Funciona para nth-child*/
+
+/*
+.box .child:nth-of-type(2n + 1){
+	background: green;
+}
+
+*/
+/*
+.box .child:nth-of-type(2){
+	background: green;
+}
+*/
+

@@ -1,0 +1,3 @@
+* Como algumas aulas foram feitas no W3SCHOOLS, com o editor de código que tem lá, a ordem está com base
+em todas as aulas que fizemos com o nosso próprio editor de código!
+Abraços e bom estudo :)
