@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108589404-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108589404-1');
+</script>
+	<title>Projeto Web Design Express</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Danki Code">
+	<meta name="description" content="Descrição do site aqui...">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+	<meta name="keywords" content="palavra-chave,lorem,ipsum">
+	<!--colocar aqui meta tags SEO-->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo"><a href="index.html"><h2>Danki.Code</h2></a></div>
+			<nav class="menu-desktop">
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="sobre.html">Sobre</a>
+					</li>
+					<li class="selected">
+						<a href="contato.html">Contato</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="menu-mobile">
+				<h2><i class="fa fa-bars"></i></h2>
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="sobre.html">Sobre</a>
+					</li>
+					<li class="selected">
+						<a href="contato.html">Contato</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="clear"></div>
+		</div>
+	</header>
+		<section style="background-image:url('images/img1.jpg');" class="title-page">
+		<div class="overlay__title-page"></div>
+		<div class="container">
+			<h2>Contato</h2>
+			<p>Quis non ad mollit duis deserunt sit amet eiusmod occaecat in consectetur magna commodo elit laborum magna cupidatat voluptate.</p>
+		</div><!--container-->
+	</section>
+	<section class="contato">
+		<div class="container">
+			<div class="w60 formulario">
+				<h2>Entre em contato que estaremos respondendo o mais breve possível!</h2>
+				<form method="post">
+					<div class="w50">
+						<input placeholder="Nome..." type="text" required />
+					</div>
+					<div class="w50">
+						<input placeholder="Sobrenome..." type="text" required />
+					</div>
+					<div class="w100">
+						<input placeholder="E-mail" type="email" required />
+					</div>
+					<div class="w100">
+						<textarea placeholder="Sua mensagem..."></textarea>
+					</div>
+				</form>
+			</div>
+
+			<div class="w40 tags-form">
+				<h2><i class="fa fa-comment"></i> Fale com a nossa equipe!</h2>
+				<p>Commodo enim duis veniam laborum dolore nostrud cupidatat deserunt.</p>
+
+				<p class="tag-contato"><i class="fa fa-facebook"></i> /dankicode</p>
+				<p class="tag-contato"><i class="fa fa-facebook"></i> /dankicode</p>
+				<p class="tag-contato"><i class="fa fa-facebook"></i> /dankicode</p>
+			</div>
+
+			<div class="clear"></div>
+		</div>
+	</section>
+	<footer class="footer1">
+		<div class="container">
+			<div class="w33">
+				<h2>Aonde estamos?</h2>
+				<p><i class="fa fa-map-pin" aria-hidden="true"></i> R. Fulano da silva, Coqueiros, Floripa/SC</p>
+				<p><i class="fa fa-phone" aria-hidden="true"></i> (48)9999-9999</p>
+			</div>
+			<div class="w33">
+				<h2>Links Úteis</h2>
+				<a href="https://dankicode.com">Danki Code</a>
+				<a href="http://www.w3schools.com">W3Schools</a>
+			</div>
+			<div class="w33">
+				<h2>Conecte-se conosco</h2>
+				<div class="group-icons">
+					<a href=""><i class="fa fa-facebook"></i></a>
+					<a href=""><i class="fa fa-instagram"></i></a>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</footer>
+	<footer class="footer2">
+		<div class="container">
+			<p>Todos os direitos reservados</p>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script>
+		$('nav.menu-mobile h2').click(function(){
+			$('nav.menu-mobile ul').slideToggle();
+		});
+	</script>
+</body>
+</html>
